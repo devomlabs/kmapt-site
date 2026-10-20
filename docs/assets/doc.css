@@ -56,7 +56,7 @@ a { color: var(--link); text-underline-offset: 3px; }
 .site-nav { display: flex; gap: 6px 14px; font-size: 14px; flex-wrap: wrap; }
 .site-nav a { color: var(--text-2); text-decoration: none; }
 .site-nav a:hover { color: var(--text); text-decoration: underline; }
-main { padding-top: 36px; padding-bottom: 56px; }
+main { padding-top: 48px; padding-bottom: 56px; }
 h1 { font-size: 26px; line-height: 1.35; margin: 0 0 8px; letter-spacing: -0.02em; text-wrap: balance; }
 h2 { font-size: 18px; line-height: 1.45; margin: 40px 0 8px; letter-spacing: -0.01em; padding-top: 4px; }
 h3 { font-size: 16px; margin: 24px 0 4px; }

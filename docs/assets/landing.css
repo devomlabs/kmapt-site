@@ -1,0 +1,52 @@
+/* 소개(랜딩) 페이지 전용. 색 토큰은 doc.css 의 것을 그대로 씀 */
+:root { --phone: #1c1c1c; --screen: #ffffff; --screen-2: #f3f3f3; --sec-alt: #f7f7f7; --ink-soft: #cfcfcf; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --phone: #5a5a5a; --screen: #1c1c1c; --screen-2: #2a2a2a; --sec-alt: #232323; --ink-soft: #444; }
+}
+:root[data-theme="dark"] { --phone: #5a5a5a; --screen: #1c1c1c; --screen-2: #2a2a2a; --sec-alt: #232323; --ink-soft: #444; }
+
+.landing { padding: 0; }
+.landing .inner { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+.hero { text-align: center; padding: 72px 0 80px; }
+.hero .mark { width: 88px; height: 88px; margin: 0 auto 28px; }
+.hero .mark svg { width: 100%; height: 100%; display: block; }
+.hero h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.35; margin: 0 0 14px; letter-spacing: -0.03em; }
+.hero p { color: var(--text-2); font-size: 17px; margin: 0 0 28px; }
+.stores { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.store { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 0; min-width: 150px; padding: 8px 18px; border-radius: 14px; background: var(--surface); color: var(--text-2); border: 1px solid var(--border); font-weight: 700; font-size: 16px; line-height: 1.3; cursor: default; }
+.store small { font-size: 11px; font-weight: 500; color: var(--text-2); }
+.feat { padding: 72px 0 0; overflow: hidden; }
+.feat.alt { background: var(--sec-alt); }
+.feat .ico { width: 52px; height: 52px; border-radius: 14px; background: var(--accent); color: #1c1c1c; display: grid; place-items: center; margin-bottom: 20px; }
+.feat .ico svg { width: 28px; height: 28px; display: block; }
+.feat h2 { font-size: clamp(24px, 4.6vw, 32px); line-height: 1.4; margin: 0 0 12px; padding: 0; letter-spacing: -0.03em; text-wrap: balance; }
+.feat p { color: var(--text-2); font-size: 17px; margin: 0; max-width: 34em; }
+.phone { margin: 40px auto 0; width: min(264px, 72vw); aspect-ratio: 9 / 14; border: 8px solid var(--phone); border-bottom: 0; border-radius: 34px 34px 0 0; background: var(--screen); overflow: hidden; box-shadow: 0 -8px 40px rgba(0,0,0,.08); }
+.phone .screen { height: 100%; font-size: 12px; line-height: 1.4; color: var(--text); }
+.phone img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.m-bar { padding: 22px 14px 10px; font-weight: 700; font-size: 13px; border-bottom: 1px solid var(--border); }
+.m-body { padding: 12px 12px 0; display: grid; gap: 8px; }
+.m-pill { background: var(--screen-2); color: var(--text-2); border-radius: 999px; padding: 8px 14px; }
+.m-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--screen-2); }
+.m-row b { font-variant-numeric: tabular-nums; }
+.m-l { display: block; height: 8px; border-radius: 4px; background: var(--ink-soft); margin: 4px 0; width: 100%; }
+.m-l.s { height: 6px; opacity: .6; width: 45%; }
+.m-l.w50 { width: 50%; } .m-l.w55 { width: 55%; } .m-l.w60 { width: 60%; } .m-l.w70 { width: 70%; } .m-l.w75 { width: 75%; } .m-l.w80 { width: 80%; }
+.m-row > div { flex: 1; }
+.m-chart { display: flex; align-items: flex-end; gap: 8px; height: 84px; padding: 8px 4px 0; }
+.m-chart u { flex: 1; background: var(--accent); border-radius: 4px 4px 0 0; text-decoration: none; }
+.m-card { background: var(--screen-2); border-radius: 12px; padding: 12px; }
+.m-card span { display: block; margin-top: 8px; color: var(--text-2); font-size: 11px; }
+.m-opt { position: relative; display: flex; justify-content: space-between; padding: 10px 12px; border-radius: 10px; background: var(--screen-2); overflow: hidden; }
+.m-opt em { position: absolute; inset: 0 auto 0 0; background: var(--accent); opacity: .55; }
+.m-opt span, .m-opt b { position: relative; }
+.m-set { display: flex; justify-content: space-between; align-items: center; padding: 14px 12px; border-radius: 12px; background: var(--screen-2); }
+.m-sw { width: 38px; height: 22px; border-radius: 999px; background: var(--ink-soft); position: relative; display: block; }
+.m-sw::after { content: ""; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; }
+.m-sw.on { background: var(--accent); }
+.m-sw.on::after { left: 19px; background: #1c1c1c; }
+.m-note { margin: 4px 4px 0; color: var(--text-2); font-size: 11px; }
+.hero.end { padding: 80px 0 72px; }
+.hero.end h2 { font-size: clamp(24px, 5vw, 32px); line-height: 1.4; margin: 0 0 24px; padding: 0; letter-spacing: -0.03em; }
+.cap, .fine { margin: 20px auto 0; color: var(--text-2); font-size: 12.5px; max-width: 34em; }
+.landing + .site-foot { margin-top: 0; }
