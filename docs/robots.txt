@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /terms/v/
+Disallow: /privacy/v/
+Sitemap: https://kmapt.com/sitemap.xml

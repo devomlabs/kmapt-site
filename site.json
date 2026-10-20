@@ -1,0 +1,15 @@
+{
+  "brand": "김대리네 아파트",
+  "domain": "https://kmapt.com",
+  "operator": {
+    "name": "데봄랩스 (Devom Labs)",
+    "representative": "손정민",
+    "business_no": "[사업자등록번호]",
+    "address": "[사업장 주소]",
+    "phone": "[대표 전화번호]",
+    "email": "contact@devomlabs.com",
+    "privacy_officer": "손정민 (대표)",
+    "privacy_officer_email": "contact@devomlabs.com"
+  },
+  "draft": true
+}
